@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="col-lg-10 col-lg-offset-1">
+<div class="col-md-8">
     <h1><i class="fa fa-users"></i> User Administration <a href="{{ route('admin.roles.index') }}" class="btn btn-default pull-right">Roles</a>
     <a href="{{ route('admin.permissions.index') }}" class="btn btn-default pull-right">Permissions</a></h1>
     <hr>

@@ -1,0 +1,943 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000312}}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000315}}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, serif, verdana; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000320}}
+textarea {
+  resize: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000323}}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000328}}
+a {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000331}}
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000335}}
+.hidden {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000338}}
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000344}}
+img {
+  max-width: 100vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000347}}
+input[type='text'], input[type='email'], input[type="password"] {
+  padding: 9px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000353}}
+.centered-error {
+  color: #6e0303;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000357}}
+.left-error {
+  color: #6e0303;
+  font-weight: bold;
+  margin-left: 3px;
+  margin-top: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000363}}
+.centered {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000368}}
+#main-header {
+  width: 100%;
+  height: 60px;
+  background-color: #121b1f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000377}}
+  #main-header .left-main-header {
+    height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000380}}
+    #main-header .left-main-header ul {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000385}}
+      #main-header .left-main-header ul li {
+        height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000388}}
+        #main-header .left-main-header ul li > a {
+          height: 100%;
+          display: block;
+          color: #e4e4e4;
+          line-height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000393}}
+          #main-header .left-main-header ul li > a:hover {
+            color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\0000397}}
+        #main-header .left-main-header ul li .home-link {
+          font-size: 22px;
+          padding: 0px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003101}}
+  #main-header .right-main-header {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003106}}
+    #main-header .right-main-header .search-input {
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 1px solid black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003111}}
+    #main-header .right-main-header .search-form {
+      -ms-flex-item-align: center;
+          align-self: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003116}}
+    #main-header .right-main-header > ul {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003121}}
+      #main-header .right-main-header > ul > li {
+        height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003124}}
+        #main-header .right-main-header > ul > li > #user-dropdown-ul {
+          display: none;
+          pointer-events: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003128}}
+          #main-header .right-main-header > ul > li > #user-dropdown-ul > li {
+            pointer-events: all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003132}}
+        #main-header .right-main-header > ul > li > a {
+          display: block;
+          height: 100%;
+          line-height: 60px;
+          color: #e4e4e4;
+          padding: 0px 12px;
+          -webkit-transition: 0.3s border;
+          transition: 0.3s border; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003139}}
+          #main-header .right-main-header > ul > li > a:hover {
+            color: white;
+            border-bottom: 5px solid #00376a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003143}}
+    #main-header .right-main-header .dropdown-li {
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      margin: 0px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003149}}
+      #main-header .right-main-header .dropdown-li i {
+        color: white;
+        line-height: 60px;
+        margin-left: 8px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003154}}
+      #main-header .right-main-header .dropdown-li .user-image {
+        width: 45px;
+        overflow: hidden;
+        height: 45px;
+        border-radius: 50%;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border: 1px solid black;
+        position: relative;
+        top: 8px;
+        margin-right: 14px;
+        background-color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003168}}
+        #main-header .right-main-header .dropdown-li .user-image img {
+          max-height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003172}}
+      #main-header .right-main-header .dropdown-li > span {
+        line-height: 60px;
+        color: white;
+        vertical-align: top; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003177}}
+      #main-header .right-main-header .dropdown-li > ul {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 4px 2px grey;
+                box-shadow: 0px 0px 4px 2px grey;
+        top: 100%;
+        right: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003191}}
+        #main-header .right-main-header .dropdown-li > ul > li > a {
+          display: block;
+          padding: 8px;
+          width: 240px;
+          color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003197}}
+          #main-header .right-main-header .dropdown-li > ul > li > a:hover {
+            background-color: #2e454f;
+            color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003204}}
+#upload-button {
+  padding: 15px 30px;
+  background-color: #f0ed63;
+  -webkit-box-shadow: 0px 2px 4px 0px grey;
+          box-shadow: 0px 2px 4px 0px grey;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+  font-family: sans-serif;
+  font-size: 18px;
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003214}}
+  #upload-button:hover {
+    background-color: #ece82f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003216}}
+  #upload-button:active {
+    -webkit-box-shadow: 0px 1px 4px 0px grey, 0px 3px 7px -3px rgba(0, 0, 0, 0.5) inset;
+            box-shadow: 0px 1px 4px 0px grey, 0px 3px 7px -3px rgba(0, 0, 0, 0.5) inset; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003220}}
+#index-upload-form {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003223}}
+.error-message {
+  color: #6e0303;
+  text-align: center;
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003228}}
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003237}}
+  .images .image {
+    width: 200px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(136, 136, 136, 0.6);
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003250}}
+    .images .image .index-img {
+      max-height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003253}}
+.index-image-links {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 500px;
+  height: 250px;
+  overflow-x: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003265}}
+.index-main {
+  text-align: center;
+  background-color: #25373f;
+  padding: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003271}}
+  .index-main span {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 22px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003276}}
+  .index-main .index-main-content {
+    display: inline-block;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 450px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003285}}
+    .index-main .index-main-content input:not([type="submit"]) {
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 0px;
+      margin-bottom: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003291}}
+    .index-main .index-main-content .index-sign-in-button {
+      float: right;
+      background-color: #121b1f;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 10px;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003299}}
+      .index-main .index-main-content .index-sign-in-button:hover {
+        background-color: #1b292f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003302}}
+    .index-main .index-main-content .index-registration-ref {
+      float: left;
+      padding-top: 10px;
+      color: #25373f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003306}}
+      .index-main .index-main-content .index-registration-ref:hover {
+        text-decoration: underline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003310}}
+  .index-main h2 {
+    font-weight: lighter;
+    color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003321}}
+.index-registration-button {
+  background-color: #04387e;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003331}}
+#registration-form {
+  width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003339}}
+  #registration-form .registration-form-title {
+    font-size: 28px;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003343}}
+  #registration-form hr {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 25px;
+    margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003349}}
+  #registration-form .form-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003355}}
+    #registration-form .form-group label {
+      margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003359}}
+    #registration-form .form-group .submit-btn {
+      border: 1px solid black;
+      outline: none;
+      padding: 7px;
+      cursor: pointer;
+      background-color: #121b1f;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003368}}
+      #registration-form .form-group .submit-btn:hover {
+        background-color: #2e454f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003373}}
+#login-form {
+  width: 400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #c7c7c8;
+  padding: 20px 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003384}}
+  #login-form .login-form-title {
+    font-size: 27px;
+    margin-bottom: 24px;
+    display: block;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003390}}
+  #login-form .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: 17px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003396}}
+    #login-form .form-group input:not([type="submit"]):focus {
+      -webkit-box-shadow: 0px 0px 6px 0.1px #4a6f80;
+              box-shadow: 0px 0px 6px 0.1px #4a6f80; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003399}}
+    #login-form .form-group label {
+      margin-bottom: 4px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003402}}
+    #login-form .form-group .submit-btn {
+      color: white;
+      outline: none;
+      border: 1px solid black;
+      padding: 6px;
+      background-color: #121b1f;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003409}}
+      #login-form .form-group .submit-btn:hover {
+        background-color: #2e454f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003412}}
+#modal-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: RGBA(0, 0, 0, 0.6);
+  display: none;
+  -webkit-animation: fade-in-modal 0.5s forwards;
+          animation: fade-in-modal 0.5s forwards; }
+@-webkit-keyframes fade-in-modal {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+            transform: scale(2); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+@keyframes fade-in-modal {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+            transform: scale(2); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003432}}
+  #modal-box .modal {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003442}}
+    #modal-box .modal .modal-header {
+      height: 100%;
+      padding: 15px;
+      background-color: #1b292f;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003450}}
+      #modal-box .modal .modal-header .header-span {
+        color: white;
+        font-size: 18px;
+        font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003455}}
+      #modal-box .modal .modal-header .header-icon {
+        color: white;
+        font-size: 24px;
+        cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003460}}
+    #modal-box .modal .modal-body {
+      height: 100%;
+      padding: 25px 15px;
+      background-color: white;
+      font-weight: bold;
+      font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003467}}
+    #modal-box .modal .modal-footer {
+      height: 100%;
+      padding: 15px;
+      background-color: white;
+      text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003473}}
+      #modal-box .modal .modal-footer button {
+        display: inline-block;
+        padding: 6px;
+        width: 120px;
+        outline: none;
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: white;
+        font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003482}}
+        #modal-box .modal .modal-footer button:hover {
+          background-color: #1b292f;
+          color: white;
+          border: 1px solid white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003489}}
+.profile-content-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003494}}
+  .profile-content-div .profile-content-div-header {
+    width: 100%;
+    background-color: #162641;
+    text-align: center;
+    padding: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003500}}
+    .profile-content-div .profile-content-div-header .profile-image-div {
+      width: 150px;
+      height: 150px;
+      background-color: white;
+      border: 2px solid black;
+      overflow: hidden;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0 auto;
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      transition: transform 0.5s, -webkit-transform 0.5s;
+      margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003513}}
+      .profile-content-div .profile-content-div-header .profile-image-div:hover {
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003516}}
+    .profile-content-div .profile-content-div-header .user-name {
+      display: inline-block;
+      font-weight: bold;
+      color: white;
+      font-size: 24px;
+      margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003523}}
+    .profile-content-div .profile-content-div-header .profile-picture-input-label {
+      display: inline-block;
+      font-weight: bold;
+      color: black;
+      padding: 8px;
+      background-color: white;
+      border-radius: 6px;
+      border: 2px solid black;
+      cursor: pointer;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003533}}
+      .profile-content-div .profile-content-div-header .profile-picture-input-label:hover {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003538}}
+    .profile-content-div .profile-content-div-header .profile-image {
+      max-height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003542}}
+.profile-images-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003551}}
+  .profile-images-div .profile-image-div {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003568}}
+    .profile-images-div .profile-image-div .image-anchor {
+      height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003571}}
+    .profile-images-div .profile-image-div .delete-icon-a {
+      display: none;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      top: 0px;
+      right: 0px;
+      text-decoration: none;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 30px;
+      color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003587}}
+      .profile-images-div .profile-image-div .delete-icon-a span {
+        position: relative;
+        top: 0.6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003593}}
+    .profile-images-div .profile-image-div:hover a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003596}}
+  .profile-images-div .profile-image {
+    max-height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003601}}
+.display-image {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003606}}
+  .display-image img {
+    max-width: 100%;
+    max-height: calc(100vh - 100px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003610}}
+.image-footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+  background-color: #02191f;
+  -webkit-box-shadow: 0 0px 0px 10px #02191f;
+          box-shadow: 0 0px 0px 10px #02191f;
+  margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003624}}
+  .image-footer .left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003629}}
+  .image-footer .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003633}}
+    .image-footer .right-side .download-image-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #25373f;
+      border: 1px solid black;
+      color: white;
+      border-radius: 5px;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003641}}
+      .image-footer .right-side .download-image-button:hover {
+        background-color: white;
+        color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003645}}
+    .image-footer .right-side .thumb-up-anchor:hover i, .image-footer .right-side .thumb-down-anchor:hover i {
+      color: #b38d7d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003648}}
+    .image-footer .right-side .thumb-up-anchor:active i, .image-footer .right-side .thumb-down-anchor:active i {
+      color: #a0725d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003651}}
+    .image-footer .right-side .thumb-down-icon, .image-footer .right-side .thumb-up-icon {
+      font-size: 28px;
+      margin: 0px 10px;
+      color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003659}}
+.comment-textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 5px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003664}}
+  .comment-textarea:focus {
+    min-height: 80px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003667}}
+.comment-submit-button {
+  float: right;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003675}}
+.comment-amount-span {
+  display: inline-block;
+  margin-top: 7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003679}}
+.user-comment-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 15px 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003684}}
+  .user-comment-div .user-comment-image-div {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003692}}
+  .user-comment-div .user-comment-right-div {
+    padding: 8px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003695}}
+  .user-comment-div .user-comment-image {
+    display: inline-block;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    max-height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003700}}
+  .user-comment-div .user-comment-username {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003706}}
+  .user-comment-div .user-comment-time {
+    margin-left: 10px;
+    color: grey; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003710}}
+  .user-comment-div .user-comment {
+    display: block;
+    vertical-align: top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003715}}
+.user-profile-image-span, .search-content .user-image-span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003726}}
+  .user-profile-image-span img, .search-content .user-image-span img {
+    max-height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003729}}
+.user-image-username {
+  font-size: 18px;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003738}}
+.search-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003743}}
+  .search-content .user-found {
+    margin-top: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003746}}
+  .search-content .user-found-username-span {
+    vertical-align: top;
+    margin-left: 5px;
+    line-height: 100px;
+    font-size: 19px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003752}}
+  .search-content .profile-link-anchor {
+    margin-top: 5px;
+    display: inline-block;
+    padding: 7px 80px;
+    background-color: #121b1f;
+    color: white;
+    border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003759}}
+    .search-content .profile-link-anchor:hover {
+      background-color: #25373f; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003762}}
+  .search-content .user-image-span {
+    width: 100px;
+    height: 100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003769}}
+.pagination-div {
+  margin-top: 50px;
+  margin-bottom: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003772}}
+  .pagination-div a.pagination-page {
+    color: #152852; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003774}}
+    .pagination-div a.pagination-page:hover {
+      color: #2f5ab8; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/gallery\/scss\/style\.sass}line{font-family:\00003777}}
+.pagination-page {
+  font-size: 18px;
+  margin: 0px 10px; }
+
+/*# sourceMappingURL=style.css.map */

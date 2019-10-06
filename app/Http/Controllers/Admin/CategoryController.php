@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 
 class CategoryController extends Controller
 {
@@ -14,7 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::get();
+        return view('admin.category.index')->with(['categories' => $categories]);
     }
 
     /**
@@ -24,7 +26,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.category.create');
     }
 
     /**
@@ -35,7 +37,22 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Validate name and permissions field
+        $this->validate(
+            $request,
+            [
+                'title' => 'required',
+            ]
+        );
+
+        $title = $request['title'];
+        $category = new Category();
+        $category->title = $title;
+        $category->save();
+
+        return redirect()->route('admin.category.index')
+        ->with('flash_message',
+         'Category'. $category->title.' added!');
     }
 
     /**
@@ -46,7 +63,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        return redirect('admin/category');
     }
 
     /**
@@ -57,7 +74,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        return view('admin.category.edit', compact('category'));
     }
 
     /**
@@ -69,7 +87,18 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $category = Category::findOrFail($id);//Get role with the given id
+        //Validate name and permission fields
+            $this->validate($request, [
+                'title'=>'required',
+            ]);
+
+            $input = $request->except(['permissions']);
+
+            $category->fill($input)->save();
+            return redirect()->route('admin.category.index')
+                ->with('flash_message',
+                 'Category'. $category->title.' updated!');
     }
 
     /**
@@ -80,6 +109,11 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $category->delete();
+
+        return redirect()->route('admin.category.index')
+            ->with('flash_message',
+             'Category deleted!');
     }
 }

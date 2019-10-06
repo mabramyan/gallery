@@ -82,7 +82,7 @@ class PermissionController extends Controller
      */
     public function show($id)
     {
-        return redirect('permissions');
+        return redirect('admin/permissions');
     }
 
     /**

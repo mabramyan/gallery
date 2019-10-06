@@ -19,8 +19,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'ProfileController@index')->name('profile');
+
+Route::resource('posts', 'PostController');
+
 Route::namespace('Admin')->prefix('admin')->middleware('auth')->name('admin.')->group(function(){
     Route::resource('users', 'UserController');
     Route::resource('permissions', 'PermissionController');
     Route::resource('roles', 'RoleController');
+    Route::resource('category', 'CategoryController');
 });

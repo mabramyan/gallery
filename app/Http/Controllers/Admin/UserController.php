@@ -10,6 +10,7 @@ use Auth;
 
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
+use Illuminate\Support\Facades\Hash;
 
 //Enables us to output flash messaging
 use Session;
@@ -122,6 +123,7 @@ class UserController extends Controller
 
 
         $input = $request->only(['name', 'email', 'password']); //Retreive the name, email and password fields
+
         $roles = $request['roles']; //Retreive all roles
         $permissions = $request['permissions']; //Retreive all roles
         $user->fill($input)->save();

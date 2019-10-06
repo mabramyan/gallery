@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class='col-lg-4 col-lg-offset-4'>
+<div class='col-md-8'>
 
     <h1><i class='fa fa-key'></i> Edit {{$permission->name}}</h1>
     <br>
