@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('main');
+Route::get('/search', 'SearchController@index')->name('search');
+Route::post('/search', 'SearchController@index')->name('searchp');
 
 
 Auth::routes();
