@@ -4,22 +4,24 @@
 
 @section('content')
 
-<div class='col-md-8'>
-    <h1><i class='fa fa-key'></i> Edit Category: {{$category->title}}</h1>
-    <hr>
 
-    {{ Form::model($category, array('route' => array('admin.category.update', $category->id), 'method' => 'PUT')) }}
+{{ Form::model($category, array('route' => array('admin.category.update', $category->id), 'method' => 'PUT', 'id'=>"registration-form")) }}
 
-    <div class="form-group">
-        {{ Form::label('title', 'Category Name') }}
-        {{ Form::text('title', null, array('class' => 'form-control')) }}
-    </div>
-
-
-    <br>
-    {{ Form::submit('Edit', array('class' => 'btn btn-primary')) }}
-
-    {{ Form::close() }}
+<div class="registration-form-title">კატეგორიის დამატება / რედაქტირება</div>
+<hr>
+<div class="form-group">
+    {{ Form::label('title', 'Title') }}
+    {{ Form::text('title', $category->title, array('class' => '')) }}
+    @error('title')
+    <span class="left-error" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+    @enderror
 </div>
+<div class="form-group">
+    <span class="error-message"></span>
+    <input class="submit-btn" type="submit" value="დამატება">
+</div>
+{{ Form::close() }}
 
 @endsection

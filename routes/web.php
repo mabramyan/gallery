@@ -22,6 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
 Route::resource('posts', 'PostController');
+Route::resource('comments', 'CommentController');
 
 Route::namespace('Admin')->prefix('admin')->middleware('auth')->name('admin.')->group(function(){
     Route::resource('users', 'UserController');

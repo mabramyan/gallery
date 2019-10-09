@@ -128,6 +128,13 @@ class PostController extends Controller
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
             $post->image = $request->file('image')->move('images', $fileNameToStore);
         }
+        $categories = $request['categories'];
+
+        if (!empty($categories)) {
+            $post->categories()->sync($categories);
+        } else {
+            $post->categories()->detach();
+        }
 
 
 

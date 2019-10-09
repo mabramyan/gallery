@@ -2,6 +2,8 @@
 
 @section('content')
 
+<main class="index-main">
+    <a href="{{ route('posts.create') }}" id="upload-button">რესურსის დამატება</a>
+</main>
 
-<a href="{{ route('posts.create') }}" id="upload-button">რესურსის დამატება</a>
 @endsection
